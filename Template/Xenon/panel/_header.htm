@@ -57,7 +57,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/support/feedback">
+                            <a href="javascript:;">
                                 <i class="fa-angle-right"></i>
                                 提交问题
                             </a>
@@ -159,7 +159,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://cn.gravatar.com/" title="Gravatar 全球公认的头像">
+                        <a href="javascript:;">
                             <span class="title">修改头像</span>
                         </a>
                     </li>
@@ -170,28 +170,10 @@
                     </li>
                 </ul>
             </li>
-            <li class="{(\Helper\Utils::menuActive('order', ' opened active'))} has-sub">
+            <li class="{(\Helper\Utils::menuActive('order', ' opened active'))}">
                 <a href="/order">
                     <i class="fa fa-shopping-bag"></i>
-                    <span class="title">订单中心</span>
-                </a>
-                <ul>
-                    <li class="{(\Helper\Utils::menuActive('lists'))}">
-                        <a href="/order/lists">
-                            <span class="title">订单管理</span>
-                        </a>
-                    </li>
-                    <li class="{(\Helper\Utils::menuActive('my'))}">
-                        <a href="/order/my">
-                            <span class="title">我的工单</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="{(\Helper\Utils::menuActive('support'))}">
-                <a href="/support">
-                    <i class="fa fa-paper-plane"></i>
-                    <span class="title">服务支持</span>
+                    <span class="title">购买套餐</span>
                 </a>
             </li>
             <if condition="$user->isAdmin()">
